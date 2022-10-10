@@ -1,8 +1,6 @@
 .Block-chiffres {
     font-family: 'Titillium',sans-serif;
-    padding-inline: 9rem;
     &_para {
-        padding-inline: 6rem;
         text-align: center;
         line-height: 1.2rem;
         &--last {
@@ -23,11 +21,14 @@
 
 .stats {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 15px;
 }
 
 .stat {
-    flex: 1;
     padding-block: 1rem;
+    width: 14rem;
     background-color: rgb(224, 224, 224);
     &--blue {
         background-color: rgb(0, 0, 46);
