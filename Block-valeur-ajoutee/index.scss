@@ -1,0 +1,63 @@
+.Block-valeur-ajoutee {
+    font-family: 'Titillium',sans-serif;
+    &_heading {
+        padding-block: 1rem;
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-align: center;
+        &--small {
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+            font-size: 1.5rem;
+        }
+    }
+    &_para {
+        padding-block: 1rem 2rem;
+        text-align: center;
+    }
+    &_cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        color: #fff;
+        @include media-break-up(690) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &_card {
+            position: relative;
+            height: 300px;
+            background-image: url("/images/skirt.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            @include media-break-up(690) {
+                height: 100%;
+            }
+            & p {
+                position: absolute;
+                left: 15px;
+                bottom: 15px;
+            }
+            &--video {
+                padding: 1rem 1rem 1rem 2rem;
+                height: auto;
+                line-height: 1.5rem;
+                color: #111;
+                background-color: #eee;
+                background-image: none;
+                & h3 {
+                    position: static;
+                    text-align: left;
+                }
+                & p {
+                    position: static;
+                    text-align: left;
+                }
+                &--para {
+                    padding-block: 1rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
