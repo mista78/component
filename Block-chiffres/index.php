@@ -1,6 +1,6 @@
 <section class="wp-block-cegos-cegos-page-section page-section page-section__container">
     <div class="Block-chiffres">
-        <h2 class="heading">vos besoins</h2>
+        <h2 class="Block-chiffres_heading">vos besoins</h2>
         <p class="Block-chiffres_para">notre mission est de former et des soutenir les individus et les organisations dqans leurs défis de développement. nous accompagnons 20 000 entreprises, nous menons 12 000 missions sur mesure par an et deployons près de 300 projets internationaux dans 50 pays.</p>
         <p class="Block-chiffres_para Block-chiffres_para--last">vos équipes sont uniques. vos enjeux sont spécifiques. ensemble, analysons vos attentes, vos objectifs et concevons votre solution de formation sur mesure. adaptée, concrète, innovente. rappidement efficasse.</p>
         <h3 class="heading heading--small">Lorem ipsum dolor sit amet consectetur.</h3>

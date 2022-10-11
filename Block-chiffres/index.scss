@@ -1,21 +1,20 @@
 .Block-chiffres {
     font-family: 'Titillium',sans-serif;
+    &_heading {
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-block: 1rem;
+        &--small {
+            font-size: 1.5rem;
+        }
+    }
     &_para {
         text-align: center;
         line-height: 1.2rem;
         &--last {
             margin-block-start: 1rem;
         }
-    }
-}
-
-.heading {
-    font-size: 2.2rem;
-    font-weight: bold;
-    text-align: center;
-    margin-block: 1rem;
-    &--small {
-        font-size: 1.5rem;
     }
 }
 
