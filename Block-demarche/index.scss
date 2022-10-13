@@ -1,16 +1,18 @@
 .Block-demarche {
     font-family: 'Titillium',sans-serif;
     padding-block: 2rem;
-    background-color: #eee;
+    background-color: #F5F5F5;
+    color: #222222;
     &_heading {
         font-size: 2.5rem;
         font-weight: bold;
         text-align: center;
         margin-block: 2rem;
+        color: #28253D;
     }
     &_para {
         text-align: center;
-        line-height: 1.2rem;
+        line-height: 1.4rem;
         &--last {
             margin-block-start: 1rem;
         }
@@ -19,41 +21,32 @@
         }
     }
     &_steps {
-        width: min-content;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-block-start: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-block-start: 3rem;
         @include media-break-up(690) {
-            position: static;
-            display: flex;
+            flex-direction: row;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 30px;
-            width: auto;
-            transform: translate(0);
         }
     }
     &_step {
-        margin: 30px 15px;
-        padding-block: 3rem;
-        width: 14rem;
         background-color: #fff;
+        text-align: center;
         @include media-break-up(690) {
-            margin: 0;
+            flex: 1 1 20%;
+            max-width: 20%;
         }
         &_img {
-            width: 40px;
-            position: relative;
-            padding-block-end: 1rem;
-            left: 50%;
-            transform: translateX(-50%);
+            padding-block-start: 1rem;
         }
         &_para {
+            padding: 1rem 0.5rem;
             font-weight: bold;
             text-align: center;
             &--color {
-                color: #f00;
+                color: #C72B18;
             }
         }
     }
