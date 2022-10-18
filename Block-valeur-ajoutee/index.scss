@@ -13,16 +13,22 @@
         text-align: center;
     }
     &_cards {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 30px;
         color: #fff;
         @include media-break-up(690) {
-            grid-template-columns: repeat(3, 1fr);
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
         }
     }
     &_card {
         position: relative;
+        @include media-break-up(690) {
+            flex: 1 1 calc(33% - 30px);
+            max-width: 50%;
+        }
         &_one {
             position: absolute;
             height: 100%;
