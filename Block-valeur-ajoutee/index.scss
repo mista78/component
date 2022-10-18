@@ -30,12 +30,12 @@
             height: 100%;
             z-index: 1;
             line-height: 1.5rem;
-            background-image: url("/images/skirt.jpg");
+            background-image: url("https://i.picsum.photos/id/177/200/300.jpg?hmac=3aZSyXagUtOBHW3uJ11PyzhXzImp4t1KRHNysu5k0Mg");
             background-size: cover;
             background-repeat: no-repeat;
             transform: rotateY(0deg);
-            transition: 5s;
-            &>div {
+            transition: 1s;
+            & > div {
                 position: absolute;
                 bottom: 0;
                 padding: 1rem 4rem 1rem 1rem;
@@ -57,34 +57,26 @@
                 background-color: #F4F4F4;
                 color: #222222;
                 background-image: none;
-                transition: 5s;
-
                 @include media-break-up(690) {
                     padding: 0;
                 }
-
-                &>div {
+                & > div {
                     position: static;
-
                     & h3 {
                         @include media-break-up(690) {
                             padding-inline-end: 3rem;
                         }
                     }
                 }
-
                 & h3 {
                     text-align: left;
                     color: #222222;
                 }
-
                 & p {
                     text-align: left;
                 }
-
                 &--para {
                     padding-block: 1rem;
-
                     &--weight {
                         font-weight: bold;
                     }
@@ -124,17 +116,15 @@
     }
 }
 
-
 input {
     display: none;
-    &:checked~ {
+    &:checked ~ {
         & .Block-valeur-ajoutee_card_one {
             transform: rotateY(180deg);
             z-index: -1;
         }
-
         & .Block-valeur-ajoutee_card_one--two {
-            transform: rotateY(180deg);
+            transform: rotateY(0deg);
             z-index: 1;
         }
     }
