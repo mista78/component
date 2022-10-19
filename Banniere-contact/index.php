@@ -1,4 +1,4 @@
-<section class="banniere-contact wp-block-cegos-cegos-page-section page-section page-section__container">
+<section class="banniere-contact bg-grey wp-block-cegos-cegos-page-section page-section page-section__container">
     <div class="Banniere-contact">
         <div class="Banniere-contact_content">
             <h2>Lorem ipsum dolor sit amet.</h2>
@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="Banniere-contact_img">
-            <img src="https://i.picsum.photos/id/1074/200/200.jpg?hmac=o1fm0jR_nE4yW-N80QpSF9JfnnRYhRraqaTaTbCGe1c" alt="">
+            <img src="https://picsum.photos/id/1074/1200" alt="">
         </div>
     </div>
 </section>

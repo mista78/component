@@ -1,9 +1,14 @@
 .banniere-contact {
     @include media-break-up(690) {
+        display: grid;
+        grid-template-columns: 50%;
         position: relative;
-        padding-block: 0 !important;
-        margin-block: 30px;
     }
+}
+
+
+.bg-grey {
+    background: #F5F5F5 !important;
 }
 
 .Banniere-contact {
@@ -18,7 +23,7 @@
             bottom: 0;
             display: block;
             width: 50%;
-            background-image: url("https://i.picsum.photos/id/1074/200/200.jpg?hmac=o1fm0jR_nE4yW-N80QpSF9JfnnRYhRraqaTaTbCGe1c");
+            background-image: url("https://picsum.photos/id/1074/1200");
             background-repeat: no-repeat;
             background-size: cover;
         }
