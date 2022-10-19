@@ -20,7 +20,6 @@
         @include media-break-up(690) {
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
         }
     }
     &_card {
@@ -35,7 +34,7 @@
             width: 100%;
             z-index: 1;
             line-height: 1.5rem;
-            background-image: url("https://i.picsum.photos/id/177/200/300.jpg?hmac=3aZSyXagUtOBHW3uJ11PyzhXzImp4t1KRHNysu5k0Mg");
+            background-image: url("https://picsum.photos/id/177/1000");
             background-size: cover;
             background-repeat: no-repeat;
             transform: rotateY(0deg);

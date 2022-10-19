@@ -129,11 +129,18 @@
 
 .CegosServices {
     &.ressources {
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-        grid-gap: 1rem;
         min-height: 250px;
+        display: flex;
+        overflow-y: auto;
         [class$="item-image"] {
             height: auto;
+        }
+        .CegosServices__item {
+            border: 1px solid #efefef;
+            position: relative;
+            flex: 1 1 200px;
+            min-width: 200px;
+            max-width: 218px;
         }
         [class$="item-content"] {
             position: absolute;
@@ -157,7 +164,11 @@
 
 .CegosServices {
     &.references {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        @include media-break-up(690) {
+            grid-template-columns: 1fr 1fr;
+
+        }
         & > * {
             display: grid;
             grid-template-columns: 1fr 1fr;
