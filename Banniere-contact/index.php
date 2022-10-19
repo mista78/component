@@ -1,4 +1,4 @@
-<section class="wp-block-cegos-cegos-page-section page-section page-section__container">
+<section class="banniere-contact wp-block-cegos-cegos-page-section page-section page-section__container">
     <div class="Banniere-contact">
         <div class="Banniere-contact_content">
             <h2>Lorem ipsum dolor sit amet.</h2>
