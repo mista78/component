@@ -1,0 +1,42 @@
+.Banniere-contact {
+    font-family: 'Titillium', sans-serif;
+    color: #222222;
+    @include media-break-up(690) {
+        display: flex;
+    }
+    &_content {
+        position: relative;
+        background-color: #F5F5F5;
+        @include media-break-up(690) {
+            flex: 1;
+        }
+        & h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            padding: 2rem;
+            color: #28253D;
+        }
+        & p {
+            margin: 0;
+            padding: 1rem 2rem 5rem 2rem;
+            line-height: 1.4rem;
+        }
+    }
+    &_img {
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-inline: -50vw;
+        width: 100vw;
+        max-width: 100vw; 
+        @include media-break-up(690) {
+            position: static;
+            margin: 0;
+            flex: 1;
+        }
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

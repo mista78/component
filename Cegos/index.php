@@ -13,7 +13,7 @@
             ], ["class" => ""]
         ] as $key => $value) : ?>
         <div class="CegosServices__item <?= $value["class"] ?? "" ?>" style="--background: url(https://static3.cegos.fr/content/uploads/2022/09/15153716/Sans-titre-2.jpg)">
-            <div class="CegosServices__item-image" data-image="true">
+            <div class="CegosServices__item-image" data-image="<?= $value['logo'] ?? "false" ?>">
                 <picture>
                     <source srcset="https://static3.cegos.fr/content/uploads/2022/09/15153716/Sans-titre-2.jpg.webp 1167w,https://static3.cegos.fr/content/uploads/2022/09/15153716/Sans-titre-2-1024x576.jpg.webp 1024w,https://static3.cegos.fr/content/uploads/2022/09/15153716/Sans-titre-2-768x432.jpg.webp 768w,https://static3.cegos.fr/content/uploads/2022/09/15153716/Sans-titre-2-640x360.jpg.webp 640w,https://static3.cegos.fr/content/uploads/2022/09/15153716/Sans-titre-2-320x180.jpg.webp 320w" sizes="(min-width:1167px) 1167px" type="image/webp"><img src="https://static3.cegos.fr/content/uploads/2022/09/15153716/Sans-titre-2.jpg" alt="thumbnail image" srcset="https://static3.cegos.fr/content/uploads/2022/09/15153716/Sans-titre-2.jpg 1167w,https://static3.cegos.fr/content/uploads/2022/09/15153716/Sans-titre-2-1024x576.jpg 1024w,https://static3.cegos.fr/content/uploads/2022/09/15153716/Sans-titre-2-768x432.jpg 768w,https://static3.cegos.fr/content/uploads/2022/09/15153716/Sans-titre-2-640x360.jpg 640w,https://static3.cegos.fr/content/uploads/2022/09/15153716/Sans-titre-2-320x180.jpg 320w" sizes="(min-width:1167px) 1167px" loading="lazy">
                 </picture>
