@@ -1,4 +1,4 @@
-<section class="wp-block-cegos-cegos-page-section page-section page-section__container">
+<section class=" cegos wp-block-cegos-cegos-page-section page-section page-section__container">
     <div class="CegosServices">
     <?php foreach ([
             [

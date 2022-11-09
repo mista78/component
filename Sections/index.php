@@ -3,7 +3,7 @@
 echo BuildHtml([
     [
         // "tags" => (isset($tags)) ? $tags : 'section',
-        "attributes" => $attributes,
+        "attributes" => $attributes ?? [],
         "condition" => Bool($item),
         "content" => [
             "Component" => [$item]

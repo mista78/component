@@ -26,7 +26,7 @@
     &_card {
         position: relative;
         @include media-break-up(690) {
-            flex: 1 1 calc(33% - 30px);
+            flex: 1 1 calc(100% / 3 - 30px);
             max-width: 50%;
         }
         &_one {

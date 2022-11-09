@@ -1,0 +1,513 @@
+.header {
+    font-family: 'Titillium',sans-serif;
+    @include media-break-up(980) {
+        position: relative;
+        padding-block-end: 6rem;
+        background-color: #28253d;
+    }
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding-inline: calc(50% - (100vw - 20px * 2) / 2);
+    background-color: #28253d;
+    color: #fff;
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        align-self: flex-end;
+        height: 4px;
+        transform: translateY(100%);
+        background: url("https://www.cegos.fr/vendor/laravel-theme-inter/dirAssetsc27d82b/media/img/webp/frise.png.webp");
+        @include media-break-up(980) {
+            display: none;
+        }
+    }
+    &_img {
+        max-width: 50px;
+        z-index: 1;
+        cursor: pointer;
+        @include media-break-up(980) {
+            position: relative;
+            max-width: 130px;
+            margin-inline-start: 2rem;
+            transform: translateY(40%);
+            &::after {
+                content: "Leader international de la formation professionnelle et continue";
+                display: block;
+                width: 250px;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                font-weight: 600;
+                transform: translate(100%, -50%);
+            }
+        }
+        &_mobile {
+            @include media-break-up(980) {
+                display: none;
+            }
+        }
+        &_desktop {
+            display: none;
+            @include media-break-up(980) {
+                display: block;
+            }
+        }
+    }
+    &_icons {
+        display: flex;
+        align-items: center;
+        margin-inline-start: auto;
+        font-size: 20px;
+        z-index: 1;
+        @include media-break-up(980) {
+            margin-inline: auto 2rem;
+            font-size: 15px;
+        }
+        & > * {
+            margin-inline-start: 0.5rem;
+            @include media-break-up(980) {
+                &::after {
+                    margin-inline: 0.5rem 1rem;
+                }
+            }
+        }
+    }
+    &_tel {
+        cursor: pointer;
+        @include media-break-up(980) {
+            &::after {
+                content: "01 55 00 95 95";
+                display: inline-block;
+            }
+        }
+        &::before {
+            content: "\e94b";
+            font-family: "icons";
+        }
+    }
+    &_contact {
+        @include media-break-up(980) {
+            &::after {
+                content: "Nous contacter";
+                display: inline-block;
+            }
+        }
+        &::before {
+            content: "\e948";
+            font-family: "icons";
+        }
+    }
+    &_search {
+        cursor: pointer;
+        @include media-break-up(980) {
+            display: none;
+        }
+        &::before {
+            content: "\e947";
+            font-family: "icons";
+        }
+    }
+    &_client {
+        @include media-break-up(980) {
+            padding: 0.5rem;
+            &:hover {
+                color: #000;
+                background-color: #fff;
+                & form {
+                    display: block;
+                }
+            }
+            &::after {
+                content: "Espace client";
+                display: inline-block;
+            }
+            & form {
+                display: none;
+                position: absolute;
+                width: 200px;
+                border: 1px solid #0001;
+                color: #000;
+                background-color: #fff;
+                transition: 0.3s;
+            }
+            & p {
+                padding: 0.5rem;
+                font-weight: 600;
+            }
+            & input {
+                display: block;
+                width: 100%;
+                margin: 0.5rem;
+                padding: 0.5rem;
+                font-size: 0.8rem;
+                border: 1px solid #0002 ;
+                &[type="submit"] {
+                    color: #fff;
+                    background-color: #d20000;
+                    border: none;
+                    border-radius: 25px;
+                    font-weight: 600;
+                }
+            }
+            &_forgeted, &_compte {
+                display: flex;
+                align-items: center;
+                position: relative;
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    height: 1px;
+                    background-color: #0001;
+                }
+                & div {
+                    margin-inline: 0.5rem;
+                }
+            }
+            &_forgeted {
+                & div {
+                    height: 1px;
+                    width: 15px;
+                    background-color: #0005;
+                    &::before, &::after {
+                        content: "";
+                        display: block;
+                        height: 1px;
+                        width: 7px;
+                        background-color: #0005;
+                        transform: translate(8px, -3px) rotate(45deg);
+                    }
+                    &::after {
+                        transform: translate(8px, 2px) rotate(-45deg);
+                    }
+                }
+                & a {
+                    padding-block: 0.5rem;
+                }
+            }
+            &_compte {
+                & div {
+                    &::before, &::after {
+                        content: "";
+                        display: block;
+                        height: 1px;
+                        width: 15px;
+                        margin: 0;
+                        background-color: #0005;
+                        transform: translateY(100%);
+                    }
+                    &::after {
+                        transform: rotate(90deg);
+                    }
+                }
+                & a {
+                    padding-block: 0.5rem;
+                }
+            }
+        }
+        &::before {
+            content: "\e949";
+            font-family: "icons";
+            @include media-break-up(980) {
+                &:hover {
+                    color: #d20000;
+                }
+            }
+        }
+    }
+    &_purchase {
+        position: relative;
+        font-size: 25px;
+        @include media-break-up(980) {
+            font-size: 20px;
+        }
+        &::before {
+            content: "\e94a";
+            font-family: "icons";
+        }
+        & div {
+            position: absolute;
+            top: 3px;
+            right: -2px;
+            background-color: #d20000;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            @include media-break-up(980) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 0;
+                right: -6px;
+                width: 12px;
+                height: 12px;
+                &::after {
+                    content: "0";
+                    position: absolute;
+                    margin: 0;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    &_open {
+        position: relative;
+        height: 21px;
+        width: 40px;
+        margin-inline-start: 1rem;
+        background-color: #28253d;
+        border: none;
+        z-index: 1;
+        cursor: pointer;
+        @include media-break-up(980) {
+            display: none;
+        }
+        &_top {
+            position: absolute;
+            display: block;
+            top: 0;
+            height: 2px;
+            width: 30px;
+            background-color: #fff4;
+            border-radius: 2px;
+        }
+        &_middle {
+            position: absolute;
+            top: 50%;
+            display: block;
+            height: 2px;
+            width: 30px;
+            background-color: #fff9;
+            border-radius: 2px;
+        }
+        &_bottom {
+            position: absolute;
+            bottom: 0;
+            display: block;
+            height: 2px;
+            width: 30px;
+            background-color: #fff4;
+            border-radius: 2px;
+        }
+        &::before, &::after {
+            display: none;
+        }
+    }
+    &_cross {
+        display: none;
+        height: 40px;
+        cursor: pointer;
+        @include media-break-up(980) {
+            display: none;
+        }
+        &::before, &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            height: 2px;
+            width: 30px;
+            transform: translateY(20px) rotate(45deg);
+            background-color: #fff6;
+            border-radius: 2px;
+        }
+        &::after {
+            transform: translateY(20px) rotate(-45deg);
+        }
+    }
+    &_bar {
+        height: 4px;
+    }
+    &_menu {
+        width: 272px;
+        background-color: #393557;
+        color: #fff;
+        font-weight: bold;
+        @include media-break-up(980) {
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: auto;
+            margin-inline-end: 2rem;
+            background-color: #28253d;
+            @include media-break-up(980) {
+                align-items: center;
+            }
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                align-self: flex-end;
+                height: 4px;
+                transform: translateY(100%);
+                background: url("https://www.cegos.fr/vendor/laravel-theme-inter/dirAssetsc27d82b/media/img/webp/frise.png.webp");
+            }
+        }
+        &_item, &_link {
+            display: block;
+            position: relative;
+            padding: 1rem;
+            margin: 0;
+            cursor: pointer;
+            @include media-break-up(980) {
+                padding: 1rem 1.1rem;
+            }
+            &::after {
+                content: "\e909";
+                position: absolute;
+                right: 1rem;
+                font-family: "icons";
+                @include media-break-up(980) {
+                    display: none;
+                }
+            }
+            &::first-letter {
+                text-transform: capitalize;
+            }
+            &:hover {
+                background-color: #fff5;
+                transition: 0.3s;
+                @include media-break-up(980) {
+                    background-color: #393557;
+                }
+            }
+        }
+        &_link {
+            display: block;
+            @include media-break-up(980) {
+                padding: 0.3rem 1.4rem;
+                color: #28253d;
+                background-color: #fff;
+                font-weight: 600;
+                border-radius: 25px;
+                &:hover {
+                    color: #fff;
+                    background-color: #28253d;
+                    box-shadow: 3px 3px 3px #0003;
+                }
+            }
+            &::after {
+                display: none;
+            }
+        }
+        &_sub {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(100%);
+            @include media-break-up(980) {
+                display: none;
+            }
+        }
+    }
+    &_logo {
+        position: relative;
+        margin-block-start: 10.5rem;
+        text-align: center;
+        color: #2e2a46;
+        font-weight: 100;
+        @include media-break-up(980) {
+            display: none;
+        }
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 1rem;
+            right: 1rem;
+            height: 1px;
+            background-color: #a29abd;
+        }
+        & a {
+            margin: 2rem 0.2rem;
+            &:hover {
+                color: #fff;
+                background-color: #2e2a46;
+                font-weight: 300;
+                transition: 0.3s;
+            }
+        }
+        &_fb {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background-color: #fff;
+            cursor: pointer;
+            &::before {
+                content: "\e91b";
+                font-family: "icons";
+            }
+        }
+        &_twitter {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background-color: #fff;
+            cursor: pointer;
+            &::before {
+                content: "\e933";
+                font-family: "icons";
+            }
+        }
+        &_yt {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background-color: #fff;
+            cursor: pointer;
+            &::before {
+                content: "\e936";
+                font-family: "icons";
+            }
+        }
+        &_linkedin {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background-color: #fff;
+            cursor: pointer;
+            &::before {
+                content: "\e923";
+                font-family: "icons";
+            }
+        }
+    }
+}
+
+input, #client-input {
+    display: none;
+    &:checked ~ {
+        & .Header_open {
+            display: none;
+        }
+        & .Header_cross {
+            display: block;
+        }
+    }
+}

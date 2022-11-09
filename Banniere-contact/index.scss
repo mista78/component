@@ -30,7 +30,6 @@
     }
     &_content {
         position: relative;
-        background-color: #F5F5F5;
         @include media-break-up(690) {
             flex: 1;
         }

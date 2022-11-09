@@ -6,7 +6,7 @@
 $header = (isset($dataComponent['header'])) ? [[
     "tags" => "header",
     "attributes" => [
-		"class" => "page-header page-header--default z-index",
+		"class" => "header",
 		"id" => "header"
 	],
     "condition" => Bool($header),

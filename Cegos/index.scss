@@ -1,3 +1,8 @@
+.cegos {
+    margin: 0; //pour coller le block au header.
+    background-color: #fff; //couleur => anim header, sinon block trensparent.
+}
+
 .CegosServices {
     --background: url(https://static3.cegos.fr/content/uploads/2022/09/15153716/Sans-titre-2.jpg);
     display: grid;
